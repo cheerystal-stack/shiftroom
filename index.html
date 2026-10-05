@@ -1,0 +1,9 @@
+<!doctype html><html lang="ja"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#fff6fb"><link rel="manifest" href="manifest.json"><link rel="stylesheet" href="style.css"><title>SHIFT ROOM</title></head><body>
+<header><img src="assets/icon.png" class="brandIcon"><div><h1>SHIFT ROOM</h1><p>my little schedule studio ♡</p></div></header>
+<nav><button class="tab active" data-view="all">ALL SHIFT</button><button class="tab" data-view="personal">PERSONAL</button></nav>
+<main>
+<section id="allView"><div class="monthbar"><button id="prev">‹</button><b id="monthTitle"></b><button id="next">›</button></div><div class="hint">セルをタップして勤務を入力 ♡　名前タップで個人票</div><div class="tableWrap"><table id="shiftTable"></table></div></section>
+<section id="personalView" hidden><div class="personalHead"><button id="back">‹ 全体表</button><select id="personSelect"></select><button id="shareBtn">画像にする</button></div><div id="personalCard" class="personalCard soft"><div class="cardDecor">🍦 ♡ ✦ 🍨</div><h2 id="personalName"></h2><div class="engMonth" id="engMonth"></div><div id="calendar" class="calendar"></div><div id="summary" class="summary"></div></div><div class="themes"><button data-theme="soft">🍦 SOFT</button><button data-theme="nurse">🩺 NURSE</button></div></section>
+</main>
+<dialog id="picker"><form method="dialog"><h3 id="pickTitle">勤務を選択</h3><div id="shiftChoices" class="choices"></div><hr><div class="roleLabel">役割（あとから）</div><div id="roleChoices" class="choices roles"></div><button class="close">閉じる</button></form></dialog>
+<script src="app.js"></script></body></html>
